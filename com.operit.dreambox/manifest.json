@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "com.operit.dreambox",
+  "version": "0.1.0",
+  "author": ["家机"],
+  "main": "main.js",
+  "name": "dreambox",
+  "display_name": {
+    "zh": "来信 · 天使集",
+    "en": "Dreambox"
+  },
+  "category": "COMPANION",
+  "description": {
+    "zh": "拟态玻璃来信空间：梦核 / 天使集 / Never Forget 三块面板纵向堆叠，记录梦、家机动听的时刻、不想忘的事。冬色主色卡，背景与头像可换，数据本地持久化。",
+    "en": "Neumorphic glass letterbox: Dreamcore / Angels / Never Forget stacked vertically. Winter palette, custom background & avatar, local persistence."
+  },
+  "subpackages": [
+    {
+      "id": "dreambox_tools",
+      "entry": "packages/dreambox_tools.js",
+      "enabled_by_default": true,
+      "display_name": {
+        "zh": "来信·机 的读写",
+        "en": "Dreambox Tools"
+      },
+      "description": {
+        "zh": "机 读来信概览、回主人评论、主动留新信、写今日来信。数据与 UI 共享同一份 store.json。",
+        "en": "机 reads overview, replies to comments, leaves new letters, writes today's letter. Shares store.json with the UI."
+      }
+    }
+  ]
+}
